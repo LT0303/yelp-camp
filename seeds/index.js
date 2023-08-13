@@ -14,3 +14,5 @@ const seedDB = async () => {
     const c = new Campground({title: 'purple fields'});
     await c.save();
 }
+
+seedDB();
