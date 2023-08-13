@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 app.get('/campgrounds', async (req, res) => {
     const campgrounds = Campground.find({});
-    res.render('campgrounds/index')
+    res.render('campgrounds/index', { campgrounds });
 })
 
 app.listen(3000, () => {
