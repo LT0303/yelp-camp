@@ -11,13 +11,13 @@
     <h1>Edit Campground</h1>
     <form action="/campgrounds/<%= campground._id %>" method="post">
         <section>
-            <label for="title">New Title </label>
-            <input type="text" id="title" name="campground[title]">
+            <label for="title">Title </label>
+            <input type="text" id="title" name="campground[title]" value="<%= campground.title %>">
         </section>
         <form action="/campgrounds" method="post">
             <section>
-                <label for="location">New Location </label>
-                <input type="text" id="location" name="campground[location]">
+                <label for="location">Location </label>
+                <input type="text" id="location" name="campground[location]" value="<%= campground.location %>">
             </section>
             <button>Edit Campground</button>
         </form>
