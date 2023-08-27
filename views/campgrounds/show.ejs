@@ -5,6 +5,10 @@
     <h2>
         <%= campground.location %>
     </h2>
+    <img src="<%= campground.image %>" alt="">
+    <p>
+        <%= campground.description %>
+    </p>
     <div>
         <a href="/campgrounds/<%= campground._id %>/edit">Edit Campground</a>
     </div>
@@ -17,6 +21,3 @@
         <a href="/campgrounds">Back to All Campgrounds</a>
     </footer>
     <!-- Displays the specific campground's title, location -->
-    </body>
-
-    </html>
